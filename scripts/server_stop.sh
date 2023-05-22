@@ -1,4 +1,6 @@
 #!/bin/bash
 #sudo rm -rf /root/tomcat/webapps/ROOT/*.jsp
-sudo chmod +x /root/tomcat/bin/./shutdown.sh
-sudo /root/tomcat/bin/./shutdown.sh
+#sudo chmod +x /root/tomcat/bin/./shutdown.sh
+#sudo /root/tomcat/bin/./shutdown.sh
+
+systemctl stop httpd.service
