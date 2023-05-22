@@ -3,4 +3,4 @@
 #sudo chmod +x /root/tomcat/bin/./shutdown.sh
 #sudo /root/tomcat/bin/./shutdown.sh
 
-systemctl stop httpd.service
+sudo systemctl stop httpd.service
