@@ -5,15 +5,16 @@ files:
   #- source: /test.jsp
   - source: /index.html
     #destination: /root/tomcat/webapps/ROOT
-    destination: /var/www/html
+    #destination: /var/www/html
+    destination: /usr/local/apache2/htdocs/
 file_exists_behavior: OVERWRITE
 
 hooks:
-  AfterInstall:
-    - location: server_start.sh
-      timeout: 300
-      runas: root
-  ApplicationStop:
-    - location: server_stop.sh
-      timeout: 300
-      runas: root 
+  #AfterInstall:
+    #- location: server_start.sh
+      #timeout: 300
+      #runas: root
+  #ApplicationStop:
+    #- location: server_stop.sh
+      #timeout: 300
+      #runas: root 
